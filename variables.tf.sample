@@ -1,0 +1,34 @@
+# variables.tf
+variable "access_key" {
+     default = ""
+}
+variable "secret_key" {
+     default = ""
+}
+variable "region" {
+     default = "us-east-1"
+}
+variable "availabilityZone" {
+     default = "us-east-1a"
+}
+
+
+variable "key_name" {
+    default=""
+}
+
+
+variable "vpc_cidr" {
+  description = "CIDR for VPC"
+  default     = "10.10.0.0/16"
+}
+
+variable "public_subnet_cidr-1" {
+  description = "CIDR for public subnet"
+  default     = "10.10.15.0/24"
+}
+
+variable "public_subnet_cidr-2" {
+  description = "CIDR for private subnet"
+  default     = "10.10.14.0/24"
+}

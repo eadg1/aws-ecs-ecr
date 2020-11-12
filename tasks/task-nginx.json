@@ -1,0 +1,15 @@
+ [
+     {
+       "name": "nginx",
+       "image": "313610306325.dkr.ecr.us-east-1.amazonaws.com/nginx-custom:latest",
+       "memory": 256,
+       "cpu": 1,
+       "essential": true,
+       "portMappings": [
+         {
+           "containerPort": 80,
+           "protocol": "tcp"
+         }
+       ]
+     }
+   ]
